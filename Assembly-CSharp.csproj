@@ -54,9 +54,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="D:\WorkSpace\Portfolio\Game\RunningWarrior\Assets\Package\Newtonsoft.Json.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\StageSelectPanelControl.cs" />
+    <Compile Include="Assets\Script\EscapeControl.cs" />
+    <Compile Include="Assets\Script\ExitCheck.cs" />
+    <Compile Include="Assets\Script\ExitPanelCreate.cs" />
+    <Compile Include="Assets\Script\DontDestoryObject.cs" />
+    <Compile Include="Assets\Script\SaveObjectCreate.cs" />
+    <Compile Include="Assets\Script\SaveFile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Package\Newtonsoft.Json.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -322,6 +331,9 @@
     </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\Package\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>

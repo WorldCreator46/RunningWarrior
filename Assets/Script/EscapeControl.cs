@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class StageSelectPanelControl : MonoBehaviour
+public class EscapeControl : MonoBehaviour
 {
     void Update()
     {
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             gameObject.SetActive(false);
         }
