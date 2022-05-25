@@ -71,3 +71,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 954859c20cc0ac544a2d150bf00717bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ClearFinish: {fileID: 1851512424, guid: 2737ec0aef642e94dbd0972f74ef534e, type: 3}
+  ClearCoin: {fileID: -2088350793, guid: 2737ec0aef642e94dbd0972f74ef534e, type: 3}
+  ClearEquipment: {fileID: 884507225, guid: 2737ec0aef642e94dbd0972f74ef534e, type: 3}

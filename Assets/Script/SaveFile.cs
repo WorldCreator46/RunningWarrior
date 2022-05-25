@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Security.Cryptography;
 using System.Text;
 using System;
@@ -9,21 +10,36 @@ using Newtonsoft.Json;
 public class SaveFile : MonoBehaviour
 {
     string password = "";
-    Dictionary<string, bool> StageClear = new Dictionary<string, bool>()
+    public Sprite ClearFinish;
+    public Sprite ClearCoin;
+    public Sprite ClearEquipment;
+    private Dictionary<string, Dictionary<string, bool>> StageClear = new()
     {
-        {"Tutorial", false},
-        {"Stage 1", false},
-        {"Stage 2", false},
-        {"Stage 3", false},
-        {"Stage 4", false},
-        {"Stage 5", false},
-        {"Stage 6", false},
-        {"Stage 7", false},
-        {"Stage 8", false},
-        {"Stage 9", false},
-        {"Stage 10", false},
-        {"Final", false}
+        {"Tutorial", new Dictionary<string, bool>(){ { "Finish", false }, { "Coin", false }, { "Equipment", false } } },
+        {"Stage 1", new Dictionary<string, bool>(){ { "Finish", false }, { "Coin", false }, { "Equipment", false } } },
+        {"Stage 2", new Dictionary<string, bool>(){ { "Finish", false }, { "Coin", false }, { "Equipment", false } } },
+        {"Stage 3", new Dictionary<string, bool>(){ { "Finish", false }, { "Coin", false }, { "Equipment", false } } },
+        {"Stage 4", new Dictionary<string, bool>(){ { "Finish", false }, { "Coin", false }, { "Equipment", false } } },
+        {"Stage 5", new Dictionary<string, bool>(){ { "Finish", false }, { "Coin", false }, { "Equipment", false } } },
+        {"Stage 6", new Dictionary<string, bool>(){ { "Finish", false }, { "Coin", false }, { "Equipment", false } } },
+        {"Stage 7", new Dictionary<string, bool>(){ { "Finish", false }, { "Coin", false }, { "Equipment", false } } },
+        {"Stage 8", new Dictionary<string, bool>(){ { "Finish", false }, { "Coin", false }, { "Equipment", false } } },
+        {"Stage 9", new Dictionary<string, bool>(){ { "Finish", false }, { "Coin", false }, { "Equipment", false } } },
+        {"Stage 10", new Dictionary<string, bool>(){ { "Finish", false }, { "Coin", false }, { "Equipment", false } } },
+        {"Final", new Dictionary<string, bool>(){ { "Finish", false }, { "Coin", false }, { "Equipment", false } } }
     };
+    public void ClearStageCheck(string StageName, Image Finish, Image Coin, Image Equipment)
+    {
+        Finish.sprite = StageClear[StageName]["Finish"] ? ClearFinish : Finish.sprite;
+        Coin.sprite = StageClear[StageName]["Coin"] ? ClearCoin : Coin.sprite;
+        Equipment.sprite = StageClear[StageName]["Equipment"] ? ClearEquipment : Equipment.sprite;
+    }
+    public void SetStageClear(string StageName, bool Finish, bool Coin, bool Equipment)
+    {
+        StageClear[StageName]["Finish"] = StageClear[StageName]["Finish"] ? true : Finish;
+        StageClear[StageName]["Coin"] = StageClear[StageName]["Coin"] ? true : Coin;
+        StageClear[StageName]["Equipment"] = StageClear[StageName]["Equipment"] ? true : Equipment;
+    }
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     void Awake()
     {
@@ -40,7 +56,7 @@ public class SaveFile : MonoBehaviour
         if(PlayerPrefs.HasKey("password") && PlayerPrefs.HasKey("StageClear"))
         {
             password = PlayerPrefs.GetString("password");
-            StageClear = JsonConvert.DeserializeObject<Dictionary<string, bool>>(Decrypt(PlayerPrefs.GetString("StageClear")));
+            StageClear = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, bool>>>(Decrypt(PlayerPrefs.GetString("StageClear")));
         }
         else
         {
