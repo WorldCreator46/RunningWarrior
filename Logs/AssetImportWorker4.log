@@ -9,11 +9,11 @@ C:\Program Files\Unity\Hub\Editor\2021.3.0f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker3
+AssetImportWorker4
 -projectPath
 D:/WorkSpace/Portfolio/Game/RunningWarrior
 -logFile
-Logs/AssetImportWorker3.log
+Logs/AssetImportWorker4.log
 -srvPort
 5739
 Successfully changed project path to: D:/WorkSpace/Portfolio/Game/RunningWarrior
@@ -47,7 +47,7 @@ D:/WorkSpace/Portfolio/Game/RunningWarrior
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 52.29 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 53.14 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.0f1 (6eacc8284459)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -63,17 +63,17 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56996
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56692
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.186815 seconds.
+Registered in 0.186575 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 51.35 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 51.91 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  2.935 seconds
@@ -85,28 +85,28 @@ Domain Reload Profiling:
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (613ms)
-			LoadAssemblies (1947ms)
+		EndReloadAssembly (603ms)
+			LoadAssemblies (1944ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (382ms)
+			SetupTypeCache (379ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (16ms)
 			SetupLoadedEditorAssemblies (177ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (35ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (51ms)
+				RefreshPlugins (52ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (63ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
+				ProcessInitializeOnLoadAttributes (58ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003745 seconds.
-Android Extension - Scanning For ADB Devices 4570 ms
+Registered in 0.003010 seconds.
+Android Extension - Scanning For ADB Devices 4599 ms
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\WorkSpace\Portfolio\Game\RunningWarrior\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\WorkSpace\Portfolio\Game\RunningWarrior\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -116,43 +116,43 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.39 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.341 seconds
+- Completed reload, in  3.340 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3342ms)
-		BeginReloadAssembly (69ms)
+	ReloadAssembly (3340ms)
+		BeginReloadAssembly (75ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (3171ms)
-			LoadAssemblies (1913ms)
+		EndReloadAssembly (3168ms)
+			LoadAssemblies (1909ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (476ms)
+			SetupTypeCache (475ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (728ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (718ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (54ms)
-				ProcessInitializeOnLoadAttributes (197ms)
-				ProcessInitializeOnLoadMethodAttributes (462ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (173ms)
+				ProcessInitializeOnLoadMethodAttributes (478ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3695 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 30 unused Assets / (112.2 KB). Loaded Objects now: 4152.
-Memory consumption went from 143.1 MB to 143.0 MB.
-Total: 2.325300 ms (FindLiveObjects: 0.223400 ms CreateObjectMapping: 0.103800 ms MarkObjects: 1.909600 ms  DeleteObjects: 0.087900 ms)
+Memory consumption went from 143.0 MB to 142.9 MB.
+Total: 2.407800 ms (FindLiveObjects: 0.232200 ms CreateObjectMapping: 0.099200 ms MarkObjects: 1.991700 ms  DeleteObjects: 0.083800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -166,25 +166,13 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 174603.190100 seconds.
-  path: Assets/Font/ONE Mobile Regular.ttf
-  artifactKey: Guid(e463b69fd9cb19c48b7536828549c81c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Font/ONE Mobile Regular.ttf using Guid(e463b69fd9cb19c48b7536828549c81c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6c473caa0af02b1fa5190946c43372f') in 0.114683 seconds 
+  Time since last request: 174603.187397 seconds.
+  path: Assets/Font/ONE Mobile OTF Bold.otf
+  artifactKey: Guid(683d148470a926040a92e887440bbd24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/ONE Mobile OTF Bold.otf using Guid(683d148470a926040a92e887440bbd24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '679e5b816059e64e16d5ed61ea615f06') in 0.135519 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Font/ONE Mobile Title.ttf
-  artifactKey: Guid(239bf64ddcd590b45a9f5d4dcce96763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Font/ONE Mobile Title.ttf using Guid(239bf64ddcd590b45a9f5d4dcce96763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5e9c29da68ce9a0d805897cf8aba060') in 0.014400 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Font/ONE Mobile POP.ttf
-  artifactKey: Guid(3ec7cd7af20180343bce8db9bab038bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Font/ONE Mobile POP.ttf using Guid(3ec7cd7af20180343bce8db9bab038bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cfc648465d7dfa8226f4050a2e0aeca') in 0.117128 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Font/ONE Mobile Light.ttf
-  artifactKey: Guid(8be0bd56e89ff944b8e6db363c6db87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Font/ONE Mobile Light.ttf using Guid(8be0bd56e89ff944b8e6db363c6db87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f66a74ea1611cfca313297a646bf0f1') in 0.051109 seconds 
+  Time since last request: 0.000015 seconds.
+  path: Assets/Font/ONE Mobile Bold.ttf
+  artifactKey: Guid(eb450fb56c0e5e940bb711cf298ca815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/ONE Mobile Bold.ttf using Guid(eb450fb56c0e5e940bb711cf298ca815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd624b1328a85cd8b66331c0e1182b26') in 0.149305 seconds 

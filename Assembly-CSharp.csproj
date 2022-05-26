@@ -61,9 +61,9 @@
     <Compile Include="Assets\Script\ExitPanelCreate.cs" />
     <Compile Include="Assets\Script\SaveObjectCreate.cs" />
     <Compile Include="Assets\Script\DontDestoryObject.cs" />
-    <Compile Include="Assets\Script\ExitCheck.cs" />
     <Compile Include="Assets\Script\SetClearImage.cs" />
     <Compile Include="Assets\Script\PlayGame.cs" />
+    <Compile Include="Assets\Script\ExitCheck.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Package\Newtonsoft.Json.dll" />
