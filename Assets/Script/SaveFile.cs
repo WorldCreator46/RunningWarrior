@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System;
 using Newtonsoft.Json;
+using UnityEngine.SceneManagement;
 
 public class SaveFile : MonoBehaviour
 {
@@ -13,6 +14,13 @@ public class SaveFile : MonoBehaviour
     public Sprite ClearFinish;
     public Sprite ClearCoin;
     public Sprite ClearEquipment;
+    private int TotalMoney = 0;
+    public Dictionary<string, bool> PresentClear = new()
+    {
+        { "Finish", false }, 
+        { "Coin", false }, 
+        { "Equipment", false }
+    };
     private Dictionary<string, Dictionary<string, bool>> StageClear = new()
     {
         {"Tutorial", new Dictionary<string, bool>(){ { "Finish", false }, { "Coin", false }, { "Equipment", false } } },
@@ -36,9 +44,9 @@ public class SaveFile : MonoBehaviour
     }
     public void SetStageClear(string StageName, bool Finish, bool Coin, bool Equipment)
     {
-        StageClear[StageName]["Finish"] = StageClear[StageName]["Finish"] ? true : Finish;
-        StageClear[StageName]["Coin"] = StageClear[StageName]["Coin"] ? true : Coin;
-        StageClear[StageName]["Equipment"] = StageClear[StageName]["Equipment"] ? true : Equipment;
+        StageClear[StageName]["Finish"] = StageClear[StageName]["Finish"] || Finish;
+        StageClear[StageName]["Coin"] = StageClear[StageName]["Coin"] || Coin;
+        StageClear[StageName]["Equipment"] = StageClear[StageName]["Equipment"] || Equipment;
     }
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     void Awake()
@@ -49,6 +57,7 @@ public class SaveFile : MonoBehaviour
     {
         PlayerPrefs.SetString("password", password);
         PlayerPrefs.SetString("StageClear", Encrypt(JsonConvert.SerializeObject(StageClear)));
+        PlayerPrefs.SetString("Moeny", Encrypt(TotalMoney.ToString()));
         PlayerPrefs.Save();
     }
     void Load()
@@ -57,6 +66,7 @@ public class SaveFile : MonoBehaviour
         {
             password = PlayerPrefs.GetString("password");
             StageClear = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, bool>>>(Decrypt(PlayerPrefs.GetString("StageClear")));
+            TotalMoney = int.Parse(Decrypt(PlayerPrefs.GetString("Moeny")));
         }
         else
         {
