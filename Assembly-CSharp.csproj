@@ -56,12 +56,18 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AssetsStoreDownload\2D SpritePack\Demo\Scripts\Portal.cs" />
+    <Compile Include="Assets\AssetsStoreDownload\2D SpritePack\Demo\Scripts\Saw.cs" />
     <Compile Include="Assets\Script\SaveFile.cs" />
     <Compile Include="Assets\Script\EscapeControl.cs" />
     <Compile Include="Assets\Script\ShowMoney.cs" />
     <Compile Include="Assets\Script\ExitPanelCreate.cs" />
+    <Compile Include="Assets\AssetsStoreDownload\2D SpritePack\Demo\Scripts\CameraControlla.cs" />
     <Compile Include="Assets\AssetsStoreDownload\Prototype Hero Demo - Pixel Art\Demo\Sensor_Prototype.cs" />
     <Compile Include="Assets\Script\SaveObjectCreate.cs" />
+    <Compile Include="Assets\AssetsStoreDownload\2D SpritePack\Demo\Scripts\Player.cs" />
+    <Compile Include="Assets\AssetsStoreDownload\2D SpritePack\Demo\Scripts\RestartLevel.cs" />
+    <Compile Include="Assets\AssetsStoreDownload\Simple 2D Platformer BE2\ReadMe\Scripts\ReadmeBE2.cs" />
     <Compile Include="Assets\AssetsStoreDownload\Prototype Hero Demo - Pixel Art\Demo\PrototypeHeroDemo.cs" />
     <Compile Include="Assets\Script\DontDestoryObject.cs" />
     <Compile Include="Assets\AssetsStoreDownload\Prototype Hero Demo - Pixel Art\Demo\Dust_DestroyEvent.cs" />
@@ -69,12 +75,6 @@
     <Compile Include="Assets\AssetsStoreDownload\Prototype Hero Demo - Pixel Art\Demo\AudioManager_PrototypeHero.cs" />
     <Compile Include="Assets\Script\PlayGame.cs" />
     <Compile Include="Assets\Script\ExitCheck.cs" />
-    <Compile Include="Assets\AssetsStoreDownload\Simple 2D Platformer BE2\ReadMe\Scripts\ReadmeBE2.cs" />
-    <Compile Include="Assets\AssetsStoreDownload\2D SpritePack\Demo\Scripts\Saw.cs" />
-    <Compile Include="Assets\AssetsStoreDownload\2D SpritePack\Demo\Scripts\RestartLevel.cs" />
-    <Compile Include="Assets\AssetsStoreDownload\2D SpritePack\Demo\Scripts\Player.cs" />
-    <Compile Include="Assets\AssetsStoreDownload\2D SpritePack\Demo\Scripts\Portal.cs" />
-    <Compile Include="Assets\AssetsStoreDownload\2D SpritePack\Demo\Scripts\CameraControlla.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Package\Newtonsoft.Json.dll" />
