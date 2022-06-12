@@ -75,6 +75,7 @@
     <Compile Include="Assets\AssetsStoreDownload\Prototype Hero Demo - Pixel Art\Demo\AudioManager_PrototypeHero.cs" />
     <Compile Include="Assets\Script\PlayGame.cs" />
     <Compile Include="Assets\Script\ExitCheck.cs" />
+    <Compile Include="Assets\Script\PlayerMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Package\Newtonsoft.Json.dll" />
